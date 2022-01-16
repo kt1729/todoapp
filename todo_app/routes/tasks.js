@@ -39,17 +39,17 @@ router.put("/:id", async (req,res) => {
 
 router.delete("/:id", async  (req,res) => {
     try {
-        // const task = await Task.findByIdAndDelete({
-        //      _id: req.params.id},
-        //     req.body
-        // );
-        // res.send(task);
-        const task = await Task.findOneAndUpdate(
-            {
+        const task = await Task.findByIdAndDelete({
              _id: req.params.id},
             req.body
         );
-        res.send(task)
+        res.send(task);
+        // const task = await Task.findOne(
+        //     {
+        //      _id: req.params.id},
+        //     req.body
+        // );
+        // res.send(task)
     }
     catch (e) {
         res.send(e)
