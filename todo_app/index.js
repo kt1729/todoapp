@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/tasks/",tasks);
 
-const port = process.env.PORT || 8081;
+const port = 4002;
 app.listen(port,() => console.log(`Started server on port ${port}`));
 
 
