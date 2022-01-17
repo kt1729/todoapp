@@ -1,5 +1,6 @@
 import axios from "axios";
-const apiURL =  'http://localhost:8081/api/tasks';
+// const apiURL =  'http://localhost:8081/api/tasks';
+const apiURL =  'https://todo.sampleapps.dev/api/tasks';
 
 export function getTasks () {
     return axios.get(apiURL);
