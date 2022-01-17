@@ -11,6 +11,7 @@
 - First time worked on a project with react as frontend
 - Saw react basic tutorials and followed initial steps.
 - Used axios library to interact with apis
+- Used material-ui/core library for UI
 - created a basic frontend that supports add a task, mark as done, and remove a task
 
 # Deployment
